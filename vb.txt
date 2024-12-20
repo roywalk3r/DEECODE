@@ -1,0 +1,38 @@
+Sub CopyDRTItems()
+    Dim wsSource As Worksheet
+    Dim wsTarget As Worksheet
+    Dim sourceRange As Range
+    Dim targetRow As Long
+    Dim lastRow As Long
+    Dim cell As Range
+
+    ' Set worksheets
+    Set wsSource = ThisWorkbook.Sheets("Retail Prices")
+    Set wsTarget = ThisWorkbook.Sheets("Sheet1")
+
+    ' Find the last row in the source sheet (assuming data starts at row 2)
+    lastRow = wsSource.Cells(wsSource.Rows.Count, "A").End(xlUp).Row
+
+    ' Define the range to check (columns A:D, assuming Item Desc is in column B)
+    Set sourceRange = wsSource.Range("A2:D" & lastRow)
+
+    ' Initialize the target row
+    targetRow = 2
+
+    ' Clear the target sheet first (optional)
+    wsTarget.Cells.Clear
+    ' Add headers to the target sheet
+    wsTarget.Range("A1:D1").Value = Array("Item Code", "Item Desc", "Effective Date", "Current Selling Price")
+
+    ' Loop through each row in the source range
+    For Each cell In sourceRange.Columns(2).Cells ' Column B is Item Desc
+        If cell.Value Like "DRT*" Then
+            ' Copy the row to the target sheet
+            wsTarget.Cells(targetRow, 1).Resize(1, 4).Value = wsSource.Cells(cell.Row, 1).Resize(1, 4).Value
+            targetRow = targetRow + 1
+        End If
+    Next cell
+
+    ' Notify the user
+    MsgBox "Items starting with 'DRT' have been copied!", vbInformation
+End Sub

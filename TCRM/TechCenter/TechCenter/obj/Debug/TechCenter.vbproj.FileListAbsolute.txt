@@ -1,0 +1,37 @@
+D:\Software Engineering\Playground\Visual Basic\School System\1. TechCenter\TechCenter\TechCenter\bin\Debug\TechCenter.exe.config
+D:\Software Engineering\Playground\Visual Basic\School System\1. TechCenter\TechCenter\TechCenter\bin\Debug\TechCenter.exe
+D:\Software Engineering\Playground\Visual Basic\School System\1. TechCenter\TechCenter\TechCenter\bin\Debug\TechCenter.pdb
+D:\Software Engineering\Playground\Visual Basic\School System\1. TechCenter\TechCenter\TechCenter\bin\Debug\TechCenter.xml
+D:\Software Engineering\Playground\Visual Basic\School System\1. TechCenter\TechCenter\TechCenter\obj\Debug\TechCenter.vbproj.AssemblyReference.cache
+D:\Software Engineering\Playground\Visual Basic\School System\1. TechCenter\TechCenter\TechCenter\obj\Debug\TechCenter.Resources.resources
+D:\Software Engineering\Playground\Visual Basic\School System\1. TechCenter\TechCenter\TechCenter\obj\Debug\TechCenter.vbproj.GenerateResource.cache
+D:\Software Engineering\Playground\Visual Basic\School System\1. TechCenter\TechCenter\TechCenter\obj\Debug\TechCenter.vbproj.CoreCompileInputs.cache
+D:\Software Engineering\Playground\Visual Basic\School System\1. TechCenter\TechCenter\TechCenter\obj\Debug\TechCenter.exe
+D:\Software Engineering\Playground\Visual Basic\School System\1. TechCenter\TechCenter\TechCenter\obj\Debug\TechCenter.xml
+D:\Software Engineering\Playground\Visual Basic\School System\1. TechCenter\TechCenter\TechCenter\obj\Debug\TechCenter.pdb
+D:\Software Engineering\Playground\Visual Basic\School System\1. TechCenter\TechCenter\TechCenter\obj\Debug\TechCenter.Form1.resources
+D:\Software Engineering\Playground\Visual Basic\School System\1. TechCenter\TechCenter\TechCenter\bin\Debug\Bunifu_UI_v1.5.3.dll
+D:\Software Engineering\Playground\Visual Basic\School System\1. TechCenter\TechCenter\TechCenter\obj\Debug\TechCenter.vbproj.CopyComplete
+D:\Software Engineering\Playground\Visual Basic\School System\1. TechCenter\TechCenter\TechCenter\obj\Debug\TechCenter.AdminDashboard.resources
+D:\Software Engineering\Playground\Visual Basic\School System\1. TechCenter\TechCenter\TechCenter\obj\Debug\TechCenter.InstructorDashboard.resources
+D:\Software Engineering\Playground\Visual Basic\School System\1. TechCenter\TechCenter\TechCenter\obj\Debug\TechCenter.Student_Dashboard.resources
+D:\Software Engineering\Playground\Visual Basic\School System\1. TechCenter\TechCenter\TechCenter\obj\Debug\TechCenter.Create_Instructor.resources
+D:\Software Engineering\Playground\Visual Basic\School System\1. TechCenter\TechCenter\TechCenter\obj\Debug\TechCenter.Create_Student.resources
+E:\1. TechCenter\TechCenter\TechCenter\bin\Debug\TechCenter.exe.config
+E:\1. TechCenter\TechCenter\TechCenter\bin\Debug\TechCenter.exe
+E:\1. TechCenter\TechCenter\TechCenter\bin\Debug\TechCenter.pdb
+E:\1. TechCenter\TechCenter\TechCenter\bin\Debug\TechCenter.xml
+E:\1. TechCenter\TechCenter\TechCenter\obj\Debug\TechCenter.vbproj.AssemblyReference.cache
+E:\1. TechCenter\TechCenter\TechCenter\obj\Debug\TechCenter.AdminDashboard.resources
+E:\1. TechCenter\TechCenter\TechCenter\obj\Debug\TechCenter.Create_Instructor.resources
+E:\1. TechCenter\TechCenter\TechCenter\obj\Debug\TechCenter.Create_Student.resources
+E:\1. TechCenter\TechCenter\TechCenter\obj\Debug\TechCenter.Form1.resources
+E:\1. TechCenter\TechCenter\TechCenter\obj\Debug\TechCenter.InstructorDashboard.resources
+E:\1. TechCenter\TechCenter\TechCenter\obj\Debug\TechCenter.Resources.resources
+E:\1. TechCenter\TechCenter\TechCenter\obj\Debug\TechCenter.Student_Dashboard.resources
+E:\1. TechCenter\TechCenter\TechCenter\obj\Debug\TechCenter.vbproj.GenerateResource.cache
+E:\1. TechCenter\TechCenter\TechCenter\obj\Debug\TechCenter.vbproj.CoreCompileInputs.cache
+E:\1. TechCenter\TechCenter\TechCenter\obj\Debug\TechCenter.vbproj.Up2Date
+E:\1. TechCenter\TechCenter\TechCenter\obj\Debug\TechCenter.exe
+E:\1. TechCenter\TechCenter\TechCenter\obj\Debug\TechCenter.xml
+E:\1. TechCenter\TechCenter\TechCenter\obj\Debug\TechCenter.pdb

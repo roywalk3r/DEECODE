@@ -1,0 +1,27 @@
+datasource db {
+    provider = "sqlite" // You can change this to postgresql, mysql, etc.
+    url      = "file:./dev.sqlite"
+}
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+model Student {
+    id        String    @id @default(uuid())
+    studentId String    @unique
+    name      String
+    email     String    @unique
+    createdAt DateTime  @default(now())
+    payments  Payment[]
+}
+
+model Payment {
+    id            String   @id @default(uuid())
+    amount        Float
+    currency      String
+    paymentStatus String
+    createdAt     DateTime @default(now())
+    student       Student  @relation(fields: [studentId], references: [id])
+    studentId     String
+}

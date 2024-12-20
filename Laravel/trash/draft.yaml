@@ -1,0 +1,220 @@
+models:
+  User:
+    name: string
+    email: string
+    password: string
+    role: string
+    parent_id: unsignedBigInteger
+
+  Parent:
+    user_id: unsignedBigInteger
+    phone: string
+    address: text
+
+  Student:
+    name: string
+    student_class_id: unsignedBigInteger
+    section_id: unsignedBigInteger
+    parent_id: unsignedBigInteger
+
+  StudentClass:
+    name: string
+    grade: string
+
+  Section:
+    name: string
+    student_class_id: unsignedBigInteger
+
+  Bill:
+    student_id: unsignedBigInteger
+    amount: decimal:10,2
+    billing_address: string
+    billing_type: string
+    due_date: date
+    status: string
+
+  Payment:
+    bill_id: unsignedBigInteger
+    user_id: unsignedBigInteger
+    payment_type: string
+    payment_method: string
+    amount_paid: decimal:10,2
+    payment_status: string
+    transaction_id: string
+
+  Notification:
+    user_id: unsignedBigInteger
+    message: text
+    type: string
+    read_at: timestamp:nullable
+
+controllers:
+  User:
+    index:
+      query: all
+      render: user.index with:users
+    show:
+      find: user.id
+      render: user.show with:user
+    store:
+      validate: name, email, password, role, parent_id
+      save: user
+      flash: user.name
+      redirect: user.index
+    update:
+      validate: name, email, role, parent_id
+      save: user
+      flash: user.name
+      redirect: user.show
+    destroy:
+      delete: user
+      redirect: user.index
+
+  Parent:
+    index:
+      query: all
+      render: parent.index with:parents
+    show:
+      find: parent.id
+      render: parent.show with:parent
+    store:
+      validate: user_id, phone, address
+      save: parent
+      flash: parent.user.name
+      redirect: parent.index
+    update:
+      validate: phone, address
+      save: parent
+      flash: parent.user.name
+      redirect: parent.show
+    destroy:
+      delete: parent
+      redirect: parent.index
+
+  Student:
+    index:
+      query: all
+      render: student.index with:students
+    show:
+      find: student.id
+      render: student.show with:student
+    store:
+      validate: name, student_class_id, section_id, parent_id
+      save: student
+      flash: student.name
+      redirect: student.index
+    update:
+      validate: name, student_class_id, section_id, parent_id
+      save: student
+      flash: student.name
+      redirect: student.show
+    destroy:
+      delete: student
+      redirect: student.index
+
+  StudentClass:
+    index:
+      query: all
+      render: student_class.index with:student_classes
+    show:
+      find: student_class.id
+      render: student_class.show with:student_class
+    store:
+      validate: name, grade
+      save: student_class
+      flash: student_class.name
+      redirect: student_class.index
+    update:
+      validate: name, grade
+      save: student_class
+      flash: student_class.name
+      redirect: student_class.show
+    destroy:
+      delete: student_class
+      redirect: student_class.index
+
+  Section:
+    index:
+      query: all
+      render: section.index with:sections
+    show:
+      find: section.id
+      render: section.show with:section
+    store:
+      validate: name, student_class_id
+      save: section
+      flash: section.name
+      redirect: section.index
+    update:
+      validate: name, student_class_id
+      save: section
+      flash: section.name
+      redirect: section.show
+    destroy:
+      delete: section
+      redirect: section.index
+
+  Bill:
+    index:
+      query: all
+      render: bill.index with:bills
+    show:
+      find: bill.id
+      render: bill.show with:bill
+    store:
+      validate: student_id, amount, due_date, status
+      save: bill
+      fire: BillCreated with:bill
+      flash: bill.amount
+      redirect: bill.index
+    update:
+      validate: amount, due_date, status
+      save: bill
+      flash: bill.amount
+      redirect: bill.show
+    destroy:
+      delete: bill
+      redirect: bill.index
+
+  Payment:
+    index:
+      query: all
+      render: payment.index with:payments
+    show:
+      find: payment.id
+      render: payment.show with:payment
+    store:
+      validate: bill_id, user_id,payment_type, payment_method, amount_paid, payment_status, transaction_id
+      save: payment
+      fire: PaymentProcessed with:payment
+      flash: payment.amount_paid
+      redirect: payment.index
+    update:
+      validate: payment_status
+      save: payment
+      flash: payment.amount_paid
+      redirect: payment.show
+    destroy:
+      delete: payment
+      redirect: payment.index
+
+  Notification:
+    index:
+      query: all
+      render: notification.index with:notifications
+    show:
+      find: notification.id
+      render: notification.show with:notification
+    store:
+      validate: user_id, message, type
+      save: notification
+      flash: notification.message
+      redirect: notification.index
+    update:
+      validate: read_at
+      save: notification
+      flash: notification.message
+      redirect: notification.show
+    destroy:
+      delete: notification
+      redirect: notification.index

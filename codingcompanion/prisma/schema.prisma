@@ -1,0 +1,16 @@
+// prisma/schema.prisma
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql" // or your preferred database provider
+  url      = env("DATABASE_URL") // Make sure to set this in your .env file
+}
+
+model Prompt {
+  id       Int     @id @default(autoincrement())
+  text     String
+  category String
+  createdAt DateTime @default(now())
+}

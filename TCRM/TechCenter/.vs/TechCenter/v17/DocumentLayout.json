@@ -1,0 +1,177 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\1. TechCenter\\TechCenter\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F062B01B-4529-4E6B-BC35-9831CA723393}|TechCenter\\TechCenter.vbproj|E:\\1. TechCenter\\TechCenter\\techcenter\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{F062B01B-4529-4E6B-BC35-9831CA723393}|TechCenter\\TechCenter.vbproj|solutionrelative:techcenter\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F062B01B-4529-4E6B-BC35-9831CA723393}|TechCenter\\TechCenter.vbproj|E:\\1. TechCenter\\TechCenter\\techcenter\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{F062B01B-4529-4E6B-BC35-9831CA723393}|TechCenter\\TechCenter.vbproj|solutionrelative:techcenter\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F062B01B-4529-4E6B-BC35-9831CA723393}|TechCenter\\TechCenter.vbproj|E:\\1. TechCenter\\TechCenter\\techcenter\\admindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{F062B01B-4529-4E6B-BC35-9831CA723393}|TechCenter\\TechCenter.vbproj|solutionrelative:techcenter\\admindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F062B01B-4529-4E6B-BC35-9831CA723393}|TechCenter\\TechCenter.vbproj|e:\\1. techcenter\\techcenter\\techcenter\\create_instructor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{F062B01B-4529-4E6B-BC35-9831CA723393}|TechCenter\\TechCenter.vbproj|solutionrelative:techcenter\\create_instructor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F062B01B-4529-4E6B-BC35-9831CA723393}|TechCenter\\TechCenter.vbproj|E:\\1. TechCenter\\TechCenter\\techcenter\\create_instructor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{F062B01B-4529-4E6B-BC35-9831CA723393}|TechCenter\\TechCenter.vbproj|solutionrelative:techcenter\\create_instructor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F062B01B-4529-4E6B-BC35-9831CA723393}|TechCenter\\TechCenter.vbproj|E:\\1. TechCenter\\TechCenter\\techcenter\\create_student.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{F062B01B-4529-4E6B-BC35-9831CA723393}|TechCenter\\TechCenter.vbproj|solutionrelative:techcenter\\create_student.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F062B01B-4529-4E6B-BC35-9831CA723393}|TechCenter\\TechCenter.vbproj|E:\\1. TechCenter\\TechCenter\\techcenter\\admindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{F062B01B-4529-4E6B-BC35-9831CA723393}|TechCenter\\TechCenter.vbproj|solutionrelative:techcenter\\admindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F062B01B-4529-4E6B-BC35-9831CA723393}|TechCenter\\TechCenter.vbproj|E:\\1. TechCenter\\TechCenter\\techcenter\\instructordashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{F062B01B-4529-4E6B-BC35-9831CA723393}|TechCenter\\TechCenter.vbproj|solutionrelative:techcenter\\instructordashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F062B01B-4529-4E6B-BC35-9831CA723393}|TechCenter\\TechCenter.vbproj|E:\\1. TechCenter\\TechCenter\\techcenter\\create_student.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{F062B01B-4529-4E6B-BC35-9831CA723393}|TechCenter\\TechCenter.vbproj|solutionrelative:techcenter\\create_student.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F062B01B-4529-4E6B-BC35-9831CA723393}|TechCenter\\TechCenter.vbproj|E:\\1. TechCenter\\TechCenter\\techcenter\\student_dashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{F062B01B-4529-4E6B-BC35-9831CA723393}|TechCenter\\TechCenter.vbproj|solutionrelative:techcenter\\student_dashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create_Instructor.vb [Design]",
+              "DocumentMoniker": "E:\\1. TechCenter\\TechCenter\\TechCenter\\Create_Instructor.vb",
+              "RelativeDocumentMoniker": "TechCenter\\Create_Instructor.vb",
+              "ToolTip": "E:\\1. TechCenter\\TechCenter\\TechCenter\\Create_Instructor.vb [Design]",
+              "RelativeToolTip": "TechCenter\\Create_Instructor.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-04-29T15:54:00.324Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create_Instructor.vb",
+              "DocumentMoniker": "E:\\1. TechCenter\\TechCenter\\TechCenter\\Create_Instructor.vb",
+              "RelativeDocumentMoniker": "TechCenter\\Create_Instructor.vb",
+              "ToolTip": "E:\\1. TechCenter\\TechCenter\\TechCenter\\Create_Instructor.vb",
+              "RelativeToolTip": "TechCenter\\Create_Instructor.vb",
+              "ViewState": "AQIAALUAAAAAAAAAAAAEwLsAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-04-29T15:54:01.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminDashboard.vb [Design]",
+              "DocumentMoniker": "E:\\1. TechCenter\\TechCenter\\TechCenter\\AdminDashboard.vb",
+              "RelativeDocumentMoniker": "TechCenter\\AdminDashboard.vb",
+              "ToolTip": "E:\\1. TechCenter\\TechCenter\\TechCenter\\AdminDashboard.vb [Design]",
+              "RelativeToolTip": "TechCenter\\AdminDashboard.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-04-29T15:54:00.316Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.vb [Design]",
+              "DocumentMoniker": "E:\\1. TechCenter\\TechCenter\\TechCenter\\Form1.vb",
+              "RelativeDocumentMoniker": "TechCenter\\Form1.vb",
+              "ToolTip": "E:\\1. TechCenter\\TechCenter\\TechCenter\\Form1.vb [Design]*",
+              "RelativeToolTip": "TechCenter\\Form1.vb [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-04-29T15:53:59.963Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.vb",
+              "DocumentMoniker": "E:\\1. TechCenter\\TechCenter\\TechCenter\\Form1.vb",
+              "RelativeDocumentMoniker": "TechCenter\\Form1.vb",
+              "ToolTip": "E:\\1. TechCenter\\TechCenter\\TechCenter\\Form1.vb*",
+              "RelativeToolTip": "TechCenter\\Form1.vb*",
+              "ViewState": "AQIAANwAAAAAAAAAAAAlwOoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-04-29T15:54:00.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Student_Dashboard.vb [Design]",
+              "DocumentMoniker": "E:\\1. TechCenter\\TechCenter\\TechCenter\\Student_Dashboard.vb",
+              "RelativeDocumentMoniker": "TechCenter\\Student_Dashboard.vb",
+              "ToolTip": "D:\\Software Engineering\\Playground\\Visual Basic\\School System\\1. TechCenter\\TechCenter\\TechCenter\\Student_Dashboard.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-04-29T15:54:00.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InstructorDashboard.vb [Design]",
+              "DocumentMoniker": "E:\\1. TechCenter\\TechCenter\\TechCenter\\InstructorDashboard.vb",
+              "RelativeDocumentMoniker": "TechCenter\\InstructorDashboard.vb",
+              "ToolTip": "D:\\Software Engineering\\Playground\\Visual Basic\\School System\\1. TechCenter\\TechCenter\\TechCenter\\InstructorDashboard.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-04-29T15:54:00.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Create_Student.vb [Design]",
+              "DocumentMoniker": "E:\\1. TechCenter\\TechCenter\\TechCenter\\Create_Student.vb",
+              "RelativeDocumentMoniker": "TechCenter\\Create_Student.vb",
+              "ToolTip": "D:\\Software Engineering\\Playground\\Visual Basic\\School System\\1. TechCenter\\TechCenter\\TechCenter\\Create_Student.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-04-29T15:54:00.326Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AdminDashboard.vb",
+              "DocumentMoniker": "E:\\1. TechCenter\\TechCenter\\TechCenter\\AdminDashboard.vb",
+              "RelativeDocumentMoniker": "TechCenter\\AdminDashboard.vb",
+              "ToolTip": "E:\\1. TechCenter\\TechCenter\\TechCenter\\AdminDashboard.vb",
+              "RelativeToolTip": "TechCenter\\AdminDashboard.vb",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-04-29T15:54:01.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create_Student.vb",
+              "DocumentMoniker": "E:\\1. TechCenter\\TechCenter\\TechCenter\\Create_Student.vb",
+              "RelativeDocumentMoniker": "TechCenter\\Create_Student.vb",
+              "ToolTip": "E:\\1. TechCenter\\TechCenter\\TechCenter\\Create_Student.vb",
+              "RelativeToolTip": "TechCenter\\Create_Student.vb",
+              "ViewState": "AQIAAI8AAAAAAAAAAAAmwHsAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-04-29T15:54:01.752Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

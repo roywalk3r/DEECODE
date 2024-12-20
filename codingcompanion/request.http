@@ -1,0 +1,8 @@
+### Send POST request with json body
+POST localhost:3000/api/gemini/generate HTTP/1.1
+Content-Type: application/json
+
+{
+  "prompt": "how can you help me"
+}
+

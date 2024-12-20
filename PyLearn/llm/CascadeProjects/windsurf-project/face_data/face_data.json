@@ -1,0 +1,21 @@
+{
+    "Coxy": {
+        "appearances": 10,
+        "emotions": {
+            "angry": 3,
+            "sad": 2,
+            "neutral": 3,
+            "happy": 2
+        },
+        "last_seen": "2024-12-04 17:25:25.520452",
+        "total_time": 0
+    },
+    "Godfred": {
+        "appearances": 3,
+        "emotions": {
+            "sad": 3
+        },
+        "last_seen": "2024-12-04 17:10:17.712442",
+        "total_time": 0
+    }
+}

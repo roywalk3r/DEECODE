@@ -1,0 +1,42 @@
+# Django Core
+Django
+python-dotenv
+
+# Django Extensions
+djangorestframework
+django-cors-headers
+
+# Authentication & Security
+django-allauth
+django-rest-auth
+
+# Payment Gateways
+stripe
+paypalrestsdk
+
+# Database (Optional)
+psycopg2-binary
+
+# Email & Notifications
+django-mail-template
+
+# Utilities
+pillow
+uuid
+
+# Development & Debugging
+ipython
+django-debug-toolbar
+
+# Testing
+pytest
+pytest-django
+coverage
+
+# Production
+gunicorn
+whitenoise
+
+# Optional: Celery for background tasks
+celery
+redis

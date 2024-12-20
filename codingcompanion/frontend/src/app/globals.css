@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}.container {
+   max-width: 600px;
+   margin: auto;
+   text-align: center;
+   padding: 2rem;
+ }
+textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+button {
+  padding: 0.5rem 2rem;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.response {
+  margin-top: 1.5rem;
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+}
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+

@@ -1,0 +1,8 @@
+Flask             # Flask for the web framework
+Werkzeug          # Flask's core utility library
+opencv-python   # OpenCV for image processing
+face-recognition   # Face recognition library
+numpy            # NumPy for numerical computations
+Pillow          # Pillow for handling image formats (optional, if needed)
+
+#-r requirements-dev.txt

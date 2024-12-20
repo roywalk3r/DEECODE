@@ -1,0 +1,97 @@
+{
+  "name": "companion-extension",
+  "displayName": "Coding Companion",
+  "description": "A coding companion to generate files, directories, and code.",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "timeout": 20000,
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "views": {
+      "explorer": [
+        {
+          "type": "webview",
+          "id": "aiCompanion.chatView",
+          "name": "AI Companion Chat"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "aiCompanion.generateCode",
+        "title": "AI Companion: Generate Code"
+      },
+      {
+        "command": "aiCompanion.explainCode",
+        "title": "AI Companion: Explain Code"
+      },
+      {
+        "command": "aiCompanion.optimizeCode",
+        "title": "AI Companion: Optimize Code"
+      },
+      {
+        "command": "aiCompanion.generateTests",
+        "title": "AI Companion: Generate Tests"
+      },
+      {
+        "command": "aiCompanion.testApi",
+        "title": "AI Companion: Test API Connection"
+      },
+      {
+        "command": "aiCompanion.generateCode",
+        "title": "AI Companion: Generate Code"
+      },
+      {
+        "command": "aiCompanion.editActiveFile",
+        "title": "AI Companion: Edit Active File"
+      },
+      {
+        "command": "aiCompanion.viewChatHistory",
+        "title": "AI Companion: View Chat History"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "aiCompanion.quickEdit",
+        "key": "ctrl+e",
+        "mac": "cmd+e",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "pnpm run compile-tests && pnpm run compile && pnpm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.9",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.95.0",
+    "@typescript-eslint/eslint-plugin": "^8.10.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.13.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.6.3",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "axios": "^1.7.7"
+  }
+}
