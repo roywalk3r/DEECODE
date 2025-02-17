@@ -1,0 +1,56 @@
+erDiagram
+    RENTAL_OFFICE ||--o{ VEHICLE : "is home office for"
+    RENTAL_OFFICE ||--o{ RENTAL_AGREEMENT : creates
+    VEHICLE ||--o{ RENTAL_AGREEMENT : "is assigned to"
+    CUSTOMER ||--o{ RENTAL_AGREEMENT : makes
+    VEHICLE {
+        string VehicleID PK
+        string StateOfRegistration
+        string LicensePlateNumber
+        string TypeCode
+        date LastMaintenanceDate
+        date RegistrationExpirationDate
+    }
+    TRUCK ||--|{ VEHICLE : is
+    TRAILER ||--|{ VEHICLE : is
+    TRUCK {
+        int OdometerReading
+        int GasTankCapacity
+        boolean HasWorkingRadio
+    }
+    TRAILER {
+        int MaxWeightCapacity
+    }
+    CUSTOMER {
+        string CustomerID PK
+        string Name
+        string Address
+    }
+    INDIVIDUAL ||--|| CUSTOMER : is
+    COMPANY ||--|| CUSTOMER : is
+    INDIVIDUAL {
+        string HomePhone
+        string DriversLicenseState
+        string DriversLicenseNumber
+        date DriversLicenseExpiration
+        boolean IsPoorRisk
+    }
+    COMPANY {
+        string CompanyNumber
+    }
+    RENTAL_AGREEMENT {
+        string AgreementNumber PK
+        string OriginatingOfficeNumber FK
+        date RentalDate
+        int AnticipatedDuration
+        string OriginatingOffice FK
+        string DropOffOffice FK
+        decimal DepositAmount
+        decimal QuotedDailyRate
+        decimal QuotedMileageRate
+    }
+    RENTAL_OFFICE {
+        string OfficeNumber PK
+        string OfficeName
+        string Address
+    }

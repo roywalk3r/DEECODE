@@ -1,0 +1,10 @@
+{
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch FTP Server",
+      "program": "${workspaceFolder}/ftp-server.js"
+    }
+  ]
+}

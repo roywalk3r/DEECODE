@@ -1,0 +1,15 @@
+erDiagram
+    SALES_UNIT ||--o{ SALES_UNIT : "is part of"
+    SALES_UNIT {
+        string UnitCode PK
+        string UnitName
+        string UnitType
+        string ParentUnitCode FK
+    }
+    EMPLOYEE ||--o{ SALES_UNIT : "responsible for"
+    EMPLOYEE {
+        string EmployeeID PK
+        string Name
+        string Role
+        decimal SalesQuota
+    }

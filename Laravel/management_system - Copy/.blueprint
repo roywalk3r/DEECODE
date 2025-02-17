@@ -1,0 +1,143 @@
+created:
+    - database/factories/BillerFactory.php
+    - database/factories/CalendarFactory.php
+    - database/factories/ChatAttemptFactory.php
+    - database/factories/ChatMessageFactory.php
+    - database/factories/ContractFactory.php
+    - database/factories/DebugLogFactory.php
+    - database/factories/EmailTemplateFactory.php
+    - database/factories/EstimateFactory.php
+    - database/factories/EstimateItemFactory.php
+    - database/factories/ExpenseFactory.php
+    - database/factories/ExpenseCategoryFactory.php
+    - database/factories/ExpensePaymentFactory.php
+    - database/factories/FileFactory.php
+    - database/factories/GroupFactory.php
+    - database/factories/InvoiceFactory.php
+    - database/factories/InvoiceItemFactory.php
+    - database/factories/ItemCategoryFactory.php
+    - database/factories/ItemPriceFactory.php
+    - database/factories/LogFactory.php
+    - database/factories/LoginAttemptFactory.php
+    - database/factories/NoteFactory.php
+    - database/factories/OrderFactory.php
+    - database/factories/PaymentFactory.php
+    - database/factories/ProjectFactory.php
+    - database/factories/ProjectTaskFactory.php
+    - database/factories/ReceiptFactory.php
+    - database/factories/RecurringInvoiceFactory.php
+    - database/factories/RecurringInvoiceItemFactory.php
+    - database/factories/SettingFactory.php
+    - database/factories/StockFactory.php
+    - database/factories/StockHistoryFactory.php
+    - database/factories/SupplierFactory.php
+    - database/factories/TaxRateFactory.php
+    - database/factories/TodoFactory.php
+    - database/factories/UserFactory.php
+    - database/migrations/2025_01_08_091333_create_billers_table.php
+    - database/migrations/2025_01_08_091334_create_calendars_table.php
+    - database/migrations/2025_01_08_091335_create_chat_attempts_table.php
+    - database/migrations/2025_01_08_091336_create_chat_messages_table.php
+    - database/migrations/2025_01_08_091337_create_contracts_table.php
+    - database/migrations/2025_01_08_091338_create_debug_logs_table.php
+    - database/migrations/2025_01_08_091339_create_email_templates_table.php
+    - database/migrations/2025_01_08_091340_create_estimates_table.php
+    - database/migrations/2025_01_08_091341_create_estimate_items_table.php
+    - database/migrations/2025_01_08_091342_create_expenses_table.php
+    - database/migrations/2025_01_08_091343_create_expense_categories_table.php
+    - database/migrations/2025_01_08_091344_create_expense_payments_table.php
+    - database/migrations/2025_01_08_091345_create_files_table.php
+    - database/migrations/2025_01_08_091346_create_groups_table.php
+    - database/migrations/2025_01_08_091347_create_invoices_table.php
+    - database/migrations/2025_01_08_091348_create_invoice_items_table.php
+    - database/migrations/2025_01_08_091349_create_item_categories_table.php
+    - database/migrations/2025_01_08_091350_create_item_prices_table.php
+    - database/migrations/2025_01_08_091351_create_logs_table.php
+    - database/migrations/2025_01_08_091352_create_login_attempts_table.php
+    - database/migrations/2025_01_08_091353_create_notes_table.php
+    - database/migrations/2025_01_08_091354_create_orders_table.php
+    - database/migrations/2025_01_08_091355_create_payments_table.php
+    - database/migrations/2025_01_08_091356_create_projects_table.php
+    - database/migrations/2025_01_08_091357_create_project_tasks_table.php
+    - database/migrations/2025_01_08_091358_create_receipts_table.php
+    - database/migrations/2025_01_08_091359_create_recurring_invoices_table.php
+    - database/migrations/2025_01_08_091400_create_recurring_invoice_items_table.php
+    - database/migrations/2025_01_08_091401_create_settings_table.php
+    - database/migrations/2025_01_08_091402_create_stocks_table.php
+    - database/migrations/2025_01_08_091403_create_stock_histories_table.php
+    - database/migrations/2025_01_08_091404_create_suppliers_table.php
+    - database/migrations/2025_01_08_091405_create_tax_rates_table.php
+    - database/migrations/2025_01_08_091406_create_todos_table.php
+    - database/migrations/2025_01_08_091407_create_users_table.php
+    - database/migrations/2025_01_08_091408_create_group_user_table.php
+    - app/Models/Biller.php
+    - app/Models/Calendar.php
+    - app/Models/ChatAttempt.php
+    - app/Models/ChatMessage.php
+    - app/Models/Contract.php
+    - app/Models/DebugLog.php
+    - app/Models/EmailTemplate.php
+    - app/Models/Estimate.php
+    - app/Models/EstimateItem.php
+    - app/Models/Expense.php
+    - app/Models/ExpenseCategory.php
+    - app/Models/ExpensePayment.php
+    - app/Models/File.php
+    - app/Models/Group.php
+    - app/Models/Invoice.php
+    - app/Models/InvoiceItem.php
+    - app/Models/ItemCategory.php
+    - app/Models/ItemPrice.php
+    - app/Models/Log.php
+    - app/Models/LoginAttempt.php
+    - app/Models/Note.php
+    - app/Models/Order.php
+    - app/Models/Payment.php
+    - app/Models/Project.php
+    - app/Models/ProjectTask.php
+    - app/Models/Receipt.php
+    - app/Models/RecurringInvoice.php
+    - app/Models/RecurringInvoiceItem.php
+    - app/Models/Setting.php
+    - app/Models/Stock.php
+    - app/Models/StockHistory.php
+    - app/Models/Supplier.php
+    - app/Models/TaxRate.php
+    - app/Models/Todo.php
+    - app/Models/User.php
+models:
+    User: { id: unsignedInteger, ip_address: 'string:45', username: 'string:100 nullable', password: string, salt: 'string nullable', email: 'string:100', activation_code: 'string:40 nullable', forgotten_password_code: 'string:40 nullable', forgotten_password_time: 'unsignedInteger nullable', remember_code: 'string:40 nullable', created_on: unsignedInteger, last_login: 'unsignedInteger nullable', active: 'unsignedTinyInteger nullable', first_name: 'string:50 nullable', last_name: 'string:50 nullable', company: 'string:100 nullable', phone: 'string:20 nullable', relationships: { belongsToMany: Group } }
+    Biller: { id: increments, fullname: string, phone: 'string:30 nullable', email: 'string:50 nullable', dob: 'date nullable', kyc: 'string nullable', website: "string default:''", address: 'text nullable', address2: text, city: 'string:55', state: 'string:55', postal_code: 'string:8', country: 'string:55', company: string, vat_number: "string default:''", user_id: 'unsignedInteger nullable', custom_field1: 'string nullable', custom_field2: 'string nullable', custom_field3: 'string nullable', custom_field4: 'string nullable', student_name: 'string nullable', school_name: 'string nullable', school_location: 'string nullable', hall: 'string nullable', guardian: 'string nullable', school_year: 'string:20 nullable', dob_student: 'date nullable', relationships: { belongsTo: User } }
+    Calendar: { id: increments, name: string, start_date: date, end_date: 'date nullable', repeat_type: integer, repeat_days: 'string:50 nullable', no_end: 'boolean nullable', emails: string, subject: string, additional_content: text, attachments: text, last_send: 'date nullable' }
+    ChatAttempt: { id: increments, user_id: unsignedInteger, time: bigInteger, relationships: { belongsTo: User } }
+    ChatMessage: { id: increments, content: text, from: unsignedInteger, to: unsignedInteger, read: 'integer default:0', date: datetime, date_read: 'datetime nullable', offline: 'integer default:0', relationships: { belongsTo: 'User, User:from, User:to' } }
+    Contract: { id: increments, subject: string, biller_id: integer, date: date, date_due: 'date nullable', type: string, amount: 'decimal:10,2 default:0.00', currency: "string:10 default:'USD'", description: text, reference: 'string:20', count: 'integer default:0', attachments: text, user_id: 'unsignedInteger nullable', relationships: { belongsTo: 'Biller, User' } }
+    DebugLog: { id: increments, message: string, created_at: 'datetime nullable' }
+    EmailTemplate: { id: increments, name: string, language: 'string:50', subject: string, content: text, data: string }
+    Estimate: { id: increments, reference: 'string:20', date: date, date_due: 'date nullable', title: "string:25 default:'Invoice'", description: string, status: "string:25 default:'Draft'", bill_to_id: 'integer nullable', note: text, terms: text, currency: "string:10 default:'USD'", discount_type: 'boolean default:1', subtotal: 'decimal:25,4 default:0.0000', global_discount: 'decimal:25,4 default:0.0000', shipping: 'decimal:10,2 default:0.00', total_discount: 'decimal:25,4 default:0.0000', total_tax: 'decimal:25,4 default:0.0000', total: 'decimal:25,4 default:0.0000', count: 'integer default:0', user_id: 'unsignedInteger nullable', custom_field1: string, custom_field2: string, custom_field3: string, custom_field4: string, relationships: { belongsTo: 'Biller:bill_to, User', hasMany: 'EstimateItem, EstimateTax' } }
+    EstimateItem: { id: increments, estimate_id: 'integer nullable', item_id: 'integer nullable', name: string, description: 'string nullable', quantity: 'decimal:25,4 default:0.0000', unit_price: 'decimal:25,4 default:0.0000', tax_type: 'boolean default:1', tax: 'decimal:25,4 default:0.0000', discount_type: 'boolean default:1', discount: 'decimal:25,4 default:0.0000', total: 'decimal:25,4 default:0.0000', relationships: { belongsTo: 'Estimate, Item' } }
+    Expense: { id: increments, number: integer, reference: 'string:50 nullable', category: string, date: date, date_due: 'date nullable', status: "string:50 default:'unpaid'", amount: 'decimal:25,4 default:0.0000', tax_id: 'integer nullable', tax_type: 'boolean default:0', tax_value: 'decimal:25,4 default:0.0000', tax_total: 'decimal:25,4 default:0.0000', total: 'decimal:25,4 default:0.0000', total_due: 'decimal:25,4 default:0.0000', payment_method: string, payment_date: 'date nullable', details: text, attachments: text, supplier_id: 'integer nullable', currency: "string:10 default:'USD'", user_id: 'unsignedInteger nullable', approval_status: "enum:denied,approved,waiting for approval default:'waiting for approval'", relationships: { belongsTo: 'User, Supplier' } }
+    ExpenseCategory: { id: increments, type: string, label: string, is_default: 'integer default:0' }
+    ExpensePayment: { id: increments, expense_id: integer, number: integer, date: date, amount: 'decimal:10,2 default:0.00', method: "string:20 default:'cash'", details: text, status: "string:50 default:'released'", relationships: { belongsTo: Expense } }
+    File: { id: increments, realpath: string, link: string, filename: string, extension: 'string:10', type: string, folder: string, date_upload: datetime, thumb: string, size: 'decimal:25,4', user_id: integer, trash: 'boolean default:0', relationships: { belongsTo: User } }
+    Group: { id: mediumIncrements, name: 'string:20', description: 'string:100', relationships: { belongsToMany: User } }
+    Invoice: { id: increments, reference: 'string:20', date: date, date_due: 'date nullable', title: "string:25 default:'Invoice'", description: string, status: "string:25 default:'Draft'", bill_to_id: 'integer nullable', note: text, terms: text, currency: "string:10 default:'USD'", discount_type: 'boolean default:1', subtotal: 'decimal:25,4 default:0.0000', global_discount: 'decimal:25,4 default:0.0000', shipping: 'decimal:10,2 default:0.00', total_discount: 'decimal:25,4 default:0.0000', total_tax: 'decimal:25,4 default:0.0000', total: 'decimal:25,4 default:0.0000', count: 'integer default:0', total_due: 'decimal:10,2 default:0.00', payment_date: 'date nullable', estimate_id: 'integer nullable', recurring_id: 'integer nullable', double_currency: 'boolean default:0', rate: 'decimal:25,4 default:0.0000', user_id: 'unsignedInteger nullable', custom_field1: string, custom_field2: string, custom_field3: string, custom_field4: string, relationships: { belongsTo: 'Biller:bill_to, Estimate, User', hasMany: 'InvoiceItem, InvoiceTax' } }
+    InvoiceItem: { id: increments, invoice_id: 'integer nullable', item_id: 'integer nullable', name: string, description: 'string nullable', quantity: 'decimal:25,4 default:0.0000', unit_price: 'decimal:25,4 default:0.0000', tax_type: 'boolean default:1', tax: 'decimal:25,4 default:0.0000', discount_type: 'boolean default:1', discount: 'decimal:25,4 default:0.0000', total: 'decimal:25,4 default:0.0000', relationships: { belongsTo: 'Invoice, Item' } }
+    ItemCategory: { id: increments, name: string, is_default: 'integer default:0' }
+    ItemPrice: { id: increments, item_id: integer, price: 'decimal:25,4 default:0.0000', currency: "string:10 default:'USD'", relationships: { belongsTo: Item } }
+    Log: { id: increments, date: datetime, user_id: 'unsignedInteger nullable', username: 'string:100 nullable', controller: 'string nullable', method: 'string nullable', param: 'string nullable', content: text, relationships: { belongsTo: User } }
+    LoginAttempt: { id: unsignedInteger, ip_address: 'string:15', login: 'string:100', time: 'unsignedInteger nullable' }
+    Note: { id: increments, user_id: integer, title: string, body: text, priority: 'enum:high,medium,low', status: "enum:start,pending,completed default:'pending'", created_at: datetime, relationships: { belongsTo: User } }
+    Order: { id: increments, user_id: integer, name: 'string nullable', phone_number: 'string:20', order_details: text, qty: integer, date: date, status: "enum:pending,out of stock,completed,ordered,request default:'pending'", amount: 'decimal:10,2', total_amount: integer, company: 'enum:chopbox,chopbox_plus', created_at: timestamp, updated_at: timestamp, relationships: { belongsTo: User } }
+    Payment: { id: increments, invoice_id: integer, number: integer, date: date, amount: 'decimal:10,2 default:0.00', method: "string:20 default:'cash'", details: text, credit_card: 'text nullable', token: 'string nullable', status: "string:50 default:'released'", relationships: { belongsTo: Invoice } }
+    Project: { id: increments, name: string, biller_id: integer, progress: integer, billing_type: string, rate: 'decimal:25,4 default:0.0000', currency: "string:10 default:'USD'", estimated_hours: 'integer default:0', status: "string default:'progress'", date: date, date_due: 'date nullable', members: text, description: text, user_id: unsignedInteger, relationships: { belongsTo: 'Biller, User', hasMany: ProjectTask } }
+    ProjectTask: { id: increments, project_id: integer, subject: string, hour_rate: 'decimal:25,4', date: date, date_due: 'date nullable', priority: integer, description: text, attachments: text, status: string, user_id: unsignedInteger, relationships: { belongsTo: 'Project, User' } }
+    Receipt: { id: increments, invoice_id: integer, biller_id: integer, number: integer, date: date, amount: 'decimal:10,2 default:0.00', method: "string:20 default:'cash'", details: text, credit_card: 'text nullable', token: 'string nullable', relationships: { belongsTo: 'Invoice, Biller' } }
+    RecurringInvoice: { id: increments, name: string, date: date, next_date: 'date nullable', type: string, frequency: 'string:10', number: string, occurence: integer, status: string, data: text, bill_to_id: 'integer nullable', amount: 'decimal:10,2 default:0.00', user_id: 'unsignedInteger nullable', relationships: { belongsTo: 'Biller:bill_to, User', hasMany: RecurringInvoiceItem } }
+    RecurringInvoiceItem: { id: increments, invoice_id: 'integer nullable', recurring_id: integer, date: date, skip: 'boolean default:0', relationships: { belongsTo: 'Invoice, RecurringInvoice' } }
+    Setting: { id: increments, type: 'string:10', configuration: text, controller: 'string nullable', method: 'string nullable', param: 'string nullable' }
+    Stock: { item_id: integer, name: string, category: string, price: integer, total_price: 'decimal:10,2 nullable', quantity: 'integer default:0', last_updated: datetime, relationships: { belongsTo: Item } }
+    StockHistory: { id: increments, item_id: integer, previous_quantity: integer, new_quantity: integer, updated_at: 'timestamp nullable', updated_by: 'string nullable', relationships: { belongsTo: Item } }
+    Supplier: { id: increments, fullname: string, phone: 'string:30 nullable', email: 'string:50 nullable', website: "string default:''", address: 'text nullable', address2: text, city: 'string:55', state: 'string:55', postal_code: 'string:8', country: 'string:55', company: string, vat_number: "string default:''", user_id: 'unsignedInteger nullable', custom_field1: 'string nullable', custom_field2: 'string nullable', custom_field3: 'string nullable', custom_field4: 'string nullable' }
+    TaxRate: { id: increments, label: string, value: 'decimal:10,2', type: boolean, is_default: 'boolean default:0', can_delete: 'boolean default:1' }
+    Todo: { id: increments, subject: string, priority: integer, complete: integer, description: text, date: date, date_due: 'date nullable', user_id: 'unsignedInteger nullable', attachments: text, relationships: { belongsTo: User } }

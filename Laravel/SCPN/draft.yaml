@@ -1,0 +1,175 @@
+models:
+  FeeStructures:
+    id: id
+    name: string
+    description: string nullable
+    amount: decimal:10,2
+    effective_date: date
+    class_group_id: foreignId
+    timestamps: timestamps
+    relationships:
+      belongsTo: ClassGroup
+      hasMany: Invoices
+  Teachers:
+    id: id
+    user_id: foreignId
+    first_name: string
+    last_name: string
+    specialization: string nullable
+    phone_number: string nullable
+    hire_date: date
+    timestamps: timestamps
+    relationships:
+      belongsTo: User
+      hasMany: ClassGroup
+  Students:
+    id: id
+    user_id: foreignId
+    class_group_id: foreignId nullable
+    first_name: string
+    last_name: string
+    date_of_birth: date
+    timestamps: timestamps
+    relationships:
+      belongsTo: User, ClassGroup
+      belongsToMany: Guardians
+  Guardians:
+    id: id
+    user_id: foreignId
+    first_name: string
+    last_name: string
+    phone_number: string
+    timestamps: timestamps
+    relationships:
+      belongsTo: User
+      belongsToMany: Student
+  GuardianStudent:
+    id: id
+    guardian_id: foreignId
+    student_id: foreignId
+    relationship: string
+    is_primary: boolean
+    timestamps: timestamps
+    relationships:
+      belongsTo: Guardian, Student
+  ClassGroups:
+    id: id
+    name: string
+    teacher_id: foreignId
+    timestamps: timestamps
+    relationships:
+      hasMany: Student, Schedule
+      belongsTo: Teacher
+  Schedules:
+    id: id
+    class_group_id: foreignId
+    day_of_week: integer
+    start_time: time
+    end_time: time
+    timestamps: timestamps
+    relationships:
+      belongsTo: ClassGroup
+  Attendances:
+    id: id
+    student_id: foreignId
+    class_group_id: foreignId
+    date: date
+    status: string
+    timestamps: timestamps
+    relationships:
+      belongsTo: Student, ClassGroup
+  Invoices:
+    id: id
+    student_id: foreignId
+    fee_structure_id: foreignId
+    amount: decimal:10,2
+    due_date: date
+    status: string
+    timestamps: timestamps
+    relationships:
+      belongsTo: Student, FeeStructure
+      hasMany: Payments
+  Payments:
+    id: id
+    invoice_id: foreignId
+    payment_method_id: foreignId
+    amount: decimal:10,2
+    payment_date: datetime
+    status: string
+    timestamps: timestamps
+    relationships:
+      belongsTo: Invoices, PaymentMethod
+      hasOne: Transaction
+  PaymentMethods:
+    id: id
+    name: string
+    description: string nullable
+    timestamps: timestamps
+  Transactions:
+    id: id
+    payment_id: foreignId
+    transaction_id: string unique
+    amount: decimal:10,2
+    transaction_date: datetime
+    status: string
+    timestamps: timestamps
+    relationships:
+      belongsTo: Payments
+  PaymentPlans:
+    id: id
+    invoice_id: foreignId
+    number_of_installments: integer
+    installment_amount: decimal:10,2
+    frequency: string
+    start_date: date
+    timestamps: timestamps
+    relationships:
+      belongsTo: Invoices
+  Discounts:
+    id: id
+    name: string
+    description: string nullable
+    type: string
+    value: decimal:10,2
+    timestamps: timestamps
+  InvoiceDiscounts:
+    id: id
+    invoice_id: foreignId
+    discount_id: foreignId
+    amount: decimal:10,2
+    timestamps: timestamps
+    relationships:
+      belongsTo: Invoices, Discount
+  Refunds:
+    id: id
+    payment_id: foreignId
+    amount: decimal:10,2
+    reason: string
+    status: string
+    refund_date: datetime
+    timestamps: timestamps
+    relationships:
+      belongsTo: Payments
+  Notifications:
+    id: id
+    user_id: foreignId
+    type: string
+    message: text
+    read_at: timestamp nullable
+    timestamps: timestamps
+    relationships:
+      belongsTo: User
+  Audits:
+    id: id
+    user_id: foreignId nullable
+    event: string
+    auditable_type: string
+    auditable_id: unsignedBigInteger
+    old_values: json nullable
+    new_values: json nullable
+    url: string nullable
+    ip_address: string nullable
+    user_agent: string nullable
+    timestamps: timestamps
+    relationships:
+      belongsTo: User

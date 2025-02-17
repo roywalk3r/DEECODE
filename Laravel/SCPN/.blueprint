@@ -1,0 +1,77 @@
+created:
+    - database/factories/FeeStructuresFactory.php
+    - database/factories/TeachersFactory.php
+    - database/factories/StudentsFactory.php
+    - database/factories/GuardiansFactory.php
+    - database/factories/GuardianStudentFactory.php
+    - database/factories/ClassGroupsFactory.php
+    - database/factories/SchedulesFactory.php
+    - database/factories/AttendancesFactory.php
+    - database/factories/InvoicesFactory.php
+    - database/factories/PaymentsFactory.php
+    - database/factories/PaymentMethodsFactory.php
+    - database/factories/TransactionsFactory.php
+    - database/factories/PaymentPlansFactory.php
+    - database/factories/DiscountsFactory.php
+    - database/factories/InvoiceDiscountsFactory.php
+    - database/factories/RefundsFactory.php
+    - database/factories/NotificationsFactory.php
+    - database/factories/AuditsFactory.php
+    - database/migrations/2024_12_27_134904_create_fee_structures_table.php
+    - database/migrations/2024_12_27_134905_create_teachers_table.php
+    - database/migrations/2024_12_27_134906_create_students_table.php
+    - database/migrations/2024_12_27_134907_create_guardians_table.php
+    - database/migrations/2024_12_27_134908_create_guardian_students_table.php
+    - database/migrations/2024_12_27_134909_create_class_groups_table.php
+    - database/migrations/2024_12_27_134910_create_schedules_table.php
+    - database/migrations/2024_12_27_134911_create_attendances_table.php
+    - database/migrations/2024_12_27_134912_create_invoices_table.php
+    - database/migrations/2024_12_27_134913_create_payments_table.php
+    - database/migrations/2024_12_27_134914_create_payment_methods_table.php
+    - database/migrations/2024_12_27_134915_create_transactions_table.php
+    - database/migrations/2024_12_27_134916_create_payment_plans_table.php
+    - database/migrations/2024_12_27_134917_create_discounts_table.php
+    - database/migrations/2024_12_27_134918_create_invoice_discounts_table.php
+    - database/migrations/2024_12_27_134919_create_refunds_table.php
+    - database/migrations/2024_12_27_134920_create_notifications_table.php
+    - database/migrations/2024_12_27_134921_create_audits_table.php
+    - database/migrations/2024_12_27_134922_create_guardians_students_table.php
+    - database/migrations/2024_12_27_134923_create_guardians_student_table.php
+    - app/Models/FeeStructures.php
+    - app/Models/Teachers.php
+    - app/Models/Students.php
+    - app/Models/Guardians.php
+    - app/Models/GuardianStudent.php
+    - app/Models/ClassGroups.php
+    - app/Models/Schedules.php
+    - app/Models/Attendances.php
+    - app/Models/Invoices.php
+    - app/Models/Payments.php
+    - app/Models/PaymentMethods.php
+    - app/Models/Transactions.php
+    - app/Models/PaymentPlans.php
+    - app/Models/Discounts.php
+    - app/Models/InvoiceDiscounts.php
+    - app/Models/Refunds.php
+    - app/Models/Notifications.php
+    - app/Models/Audits.php
+models:
+    Attendances: { id: id, student_id: foreignId, class_group_id: foreignId, date: date, status: string, timestamps: timestamps, relationships: { belongsTo: 'Student, ClassGroup' } }
+    Audits: { id: id, user_id: 'foreignId nullable', event: string, auditable_type: string, auditable_id: unsignedBigInteger, old_values: 'json nullable', new_values: 'json nullable', url: 'string nullable', ip_address: 'string nullable', user_agent: 'string nullable', timestamps: timestamps, relationships: { belongsTo: User } }
+    ClassGroups: { id: id, name: string, teacher_id: foreignId, timestamps: timestamps, relationships: { hasMany: 'Student, Schedule', belongsTo: Teacher } }
+    Discounts: { id: id, name: string, description: 'string nullable', type: string, value: 'decimal:10,2', timestamps: timestamps }
+    FeeStructures: { id: id, name: string, description: 'string nullable', amount: 'decimal:10,2', effective_date: date, timestamps: timestamps, relationships: { hasMany: Invoices } }
+    GuardianStudent: { id: id, guardian_id: foreignId, student_id: foreignId, relationship: string, is_primary: boolean, timestamps: timestamps, relationships: { belongsTo: 'Guardian, Student' } }
+    Guardians: { id: id, user_id: foreignId, first_name: string, last_name: string, phone_number: string, timestamps: timestamps, relationships: { belongsTo: User, belongsToMany: Student } }
+    InvoiceDiscounts: { id: id, invoice_id: foreignId, discount_id: foreignId, amount: 'decimal:10,2', timestamps: timestamps, relationships: { belongsTo: 'Invoices, Discount' } }
+    Invoices: { id: id, student_id: foreignId, fee_structure_id: foreignId, amount: 'decimal:10,2', due_date: date, status: string, timestamps: timestamps, relationships: { belongsTo: 'Student, FeeStructure', hasMany: Payments } }
+    Notifications: { id: id, user_id: foreignId, type: string, message: text, read_at: 'timestamp nullable', timestamps: timestamps, relationships: { belongsTo: User } }
+    PaymentMethods: { id: id, name: string, description: 'string nullable', timestamps: timestamps }
+    PaymentPlans: { id: id, invoice_id: foreignId, number_of_installments: integer, installment_amount: 'decimal:10,2', frequency: string, start_date: date, timestamps: timestamps, relationships: { belongsTo: Invoices } }
+    Payments: { id: id, invoice_id: foreignId, payment_method_id: foreignId, amount: 'decimal:10,2', payment_date: datetime, status: string, timestamps: timestamps, relationships: { belongsTo: 'Invoices, PaymentMethod', hasOne: Transaction } }
+    Refunds: { id: id, payment_id: foreignId, amount: 'decimal:10,2', reason: string, status: string, refund_date: datetime, timestamps: timestamps, relationships: { belongsTo: Payments } }
+    Schedules: { id: id, class_group_id: foreignId, day_of_week: integer, start_time: time, end_time: time, timestamps: timestamps, relationships: { belongsTo: ClassGroup } }
+    Students: { id: id, user_id: foreignId, class_group_id: 'foreignId nullable', first_name: string, last_name: string, date_of_birth: date, timestamps: timestamps, relationships: { belongsTo: 'User, ClassGroup', belongsToMany: Guardians } }
+    Teachers: { id: id, user_id: foreignId, first_name: string, last_name: string, specialization: 'string nullable', phone_number: 'string nullable', hire_date: date, timestamps: timestamps, relationships: { belongsTo: User, hasMany: ClassGroup } }
+    Transactions: { id: id, payment_id: foreignId, transaction_id: 'string unique', amount: 'decimal:10,2', transaction_date: datetime, status: string, timestamps: timestamps, relationships: { belongsTo: Payments } }
+    User: { name: string, email: string, email_verified_at: 'timestamp nullable default:NULL', password: string, role: "enum:'student','teacher','admin' default:'student'", remember_token: 'string:100 nullable default:NULL' }

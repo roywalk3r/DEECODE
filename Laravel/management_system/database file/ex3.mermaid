@@ -1,0 +1,13 @@
+classDiagram
+    FACULTY <|-- FULL_TIME_FACULTY
+    FACULTY <|-- PART_TIME_FACULTY
+    FACULTY : #ID
+    FACULTY : *First Name
+    FACULTY : *Last Name
+    FACULTY : *Email
+    FACULTY : *Login Date
+    FACULTY : *Login Time
+    FACULTY : oDetails
+    FULL_TIME_FACULTY : *Salary
+    FULL_TIME_FACULTY : *Insurance Plan
+    PART_TIME_FACULTY : *Hourly Rate

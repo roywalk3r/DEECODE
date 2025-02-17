@@ -1,0 +1,32 @@
+erDiagram
+    REGION ||--o{ DISTRICT : contains
+    DISTRICT ||--o{ TERRITORY : contains
+    TERRITORY ||--o{ AREA : contains
+    REGION {
+        string RegionCode PK
+        string RegionName
+    }
+    DISTRICT {
+        string DistrictCode PK
+        string DistrictName
+        string RegionCode FK
+    }
+    TERRITORY {
+        string TerritoryCode PK
+        string TerritoryName
+        string DistrictCode FK
+    }
+    AREA {
+        string AreaCode PK
+        string AreaName
+        string TerritoryCode FK
+    }
+    EMPLOYEE {
+        string EmployeeID PK
+        string Name
+        decimal SalesQuota
+    }
+    REGION ||--o{ EMPLOYEE : "managed by"
+    DISTRICT ||--o{ EMPLOYEE : "managed by"
+    TERRITORY ||--o{ EMPLOYEE : "managed by"
+    AREA ||--o{ EMPLOYEE : "responsible for"

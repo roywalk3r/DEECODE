@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="792cd607-fdd8-432d-944e-99fa3d6c4226" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Android/app/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android/app/src/main/java/com/example/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android/gradle/libs.versions.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laravel/SCP/database/seeders/RolesAndPermissionsSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laravel/SCPN/database/migrations/2024_12_23_151740_create_fee_structures_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(profile)/_layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(profile)/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Jost-VariableFont_wght.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laravel/inventory_system" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laravel/inventory_system" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laravel/warehouse_system" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laravel/warehouse_system" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular/CascadeProjects/windsurf-project/angular-ecommerce" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/CascadeProjects/windsurf-project/angular-ecommerce" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular/dshop" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/dshop" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../native" beforeDir="false" afterPath="$PROJECT_DIR$/../../native" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../node/SchoolPaymentPortal/my-app" beforeDir="false" afterPath="$PROJECT_DIR$/../../node/SchoolPaymentPortal/my-app" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\wamp64\bin\php\php8.3.6\php.exe" />
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2r7FAt3EbwjouRLUgWfsV5Qs7Fp" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.laravel-idea.search-composer-json&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ACER/Desktop/DEECODE/Reactnative/filmflix-app/app/(profile)&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\ACER\\Desktop\\DEECODE\\Reactnative\\filmflix-app\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.intellij.reactbuddy.reactComponents" value="false" />
+        <entry key="com.intellij.reactbuddy.reactInspector" value="false" />
+        <entry key="com.intellij.reactbuddy.storybook" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ACER\Desktop\DEECODE\Reactnative\filmflix-app\app\(profile)" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ACER\Desktop\DEECODE\Reactnative\filmflix-app\app" />
+      <recent name="C:\Users\ACER\Desktop\DEECODE\Reactnative\filmflix-app\app\home" />
+      <recent name="C:\Users\ACER\Desktop\DEECODE\Reactnative\filmflix-app\assets\fonts" />
+      <recent name="C:\Users\ACER\Desktop\DEECODE\React Native\filmflix-app\components" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PS-242.23726.107" />
+        <option value="bundled-php-predefined-a98d8de5180a-90914f2295cb-com.jetbrains.php.sharedIndexes-PS-242.23726.107" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="792cd607-fdd8-432d-944e-99fa3d6c4226" name="Changes" comment="" />
+      <created>1735902071761</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1735902071761</updated>
+      <workItem from="1735902074430" duration="11605000" />
+      <workItem from="1735915446285" duration="4603000" />
+      <workItem from="1736151996262" duration="2622000" />
+      <workItem from="1736155365736" duration="4090000" />
+      <workItem from="1736160225132" duration="45425000" />
+      <workItem from="1736269607602" duration="25000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
